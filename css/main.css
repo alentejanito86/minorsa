@@ -1,0 +1,31 @@
+/*
+	Nome do projecto
+	Author: Sérgio António
+	Version: 0.0.1
+*/
+/*Base - Base style | variables | mixns | etc */
+/* Modules - Individual site components */
+/* Layout - Page layout style */
+/*
+Page machines - background top
+*/
+/* line 5, ../sass/layout/_page-machine.scss */
+#page-machine .intro {
+  background-size: auto 100%;
+  background-color: #fff;
+}
+
+/* line 12, ../sass/layout/_page-machine.scss */
+.mp61b {
+  background: url(../machines/img/61b/61b-1.jpg) no-repeat bottom center;
+}
+
+/* line 13, ../sass/layout/_page-machine.scss */
+.mp27a {
+  background: url(../machines/img/27a/27a-1.jpg) no-repeat bottom center;
+}
+
+/* line 14, ../sass/layout/_page-machine.scss */
+.mp12 {
+  background: url(../machines/img/12/12-1.jpg) no-repeat bottom center;
+}

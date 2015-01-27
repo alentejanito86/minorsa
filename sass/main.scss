@@ -1,0 +1,27 @@
+/*
+	Nome do projecto
+	Author: Sérgio António
+	Version: 0.0.1
+*/
+
+/*Base - Base style | variables | mixns | etc */
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+@import 'base/_base.scss';
+
+/* Modules - Individual site components */
+
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_components.scss';
+@import 'modules/_sections.scss';
+@import 'modules/_typography.scss';
+
+/* Layout - Page layout style */
+
+@import 'layout/_header.scss';
+@import 'layout/_nav.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_page-machine.scss';
