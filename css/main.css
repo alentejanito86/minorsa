@@ -29,3 +29,8 @@ Page machines - background top
 .mp12 {
   background: url(../machines/img/12/12-1.jpg) no-repeat bottom center;
 }
+
+/* line 15, ../sass/layout/_page-machine.scss */
+.mp12a {
+  background: url(../machines/img/1a/12a-1.jpg) no-repeat bottom center;
+}

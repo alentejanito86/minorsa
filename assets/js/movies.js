@@ -106,7 +106,7 @@ var movies = [
   {
     "name": "Model MP 12",
     "outline": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-    "image": "machines/img/12/12.jpg",
+    "image": "machines/img/12/12-3.jpg",
     "cutting": 1,
     "head": 2,
     "page": "machines_12.html",
