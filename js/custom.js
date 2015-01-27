@@ -12,8 +12,10 @@
 	$(window).scroll(function() {
 		if ($(".navbar").offset().top > 50) {
 			$(".navbar-fixed-top").addClass("top-nav-collapse");
+			$(".index > .navbar-right > ul").removeClass("hide");
 		} else {
 			$(".navbar-fixed-top").removeClass("top-nav-collapse");
+			$(".index > .navbar-right > ul").addClass("hide");
 		}
 	});
 
@@ -34,6 +36,7 @@
 			event.preventDefault();
 		});
 	});
+
 
 })(jQuery);
 
