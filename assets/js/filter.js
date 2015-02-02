@@ -994,7 +994,7 @@ var addFilterCriteria = function(criteria){
   criteria = setDefaultCriteriaOpts(criteria);
   bindFilterEvent(criteria, this);
 
-  criteria._q = criteria.field + (criteria.type == 'range' ? '.$bt' : '')
+  criteria._q = criteria.field + (criteria.type == 'radio' ? '.$bt' : '')
   criteria.active = true;
 
   this.criterias.push(criteria);
@@ -1052,7 +1052,7 @@ var getSelectedValues = function(criteria){
     vals.push($(this).val());
   });
 
-  if(criteria.type == 'range'){
+  if(criteria.type == 'radio'){
     vals = vals[0].split('-');
   }
 

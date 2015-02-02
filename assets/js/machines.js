@@ -35,9 +35,9 @@ $(document).ready(function(){
     batch_size: 50
   });
 
-  FJS.addCriteria({field: 'cutting', ele: '#cutting_filter', type: 'range'});
+  FJS.addCriteria({field: 'cutting', ele: '#cutting_filter input:checkbox'});
   FJS.addCriteria({field: 'work', ele: '#genre_criteria input:checkbox'});
-  FJS.addCriteria({field: 'head', ele: '#head_filter', type: 'range'});
+  FJS.addCriteria({field: 'head', ele: '#head_filter', type: 'radio'});
   /*
   FJS.addCriteria({field: 'rating', ele: '#rating_filter', type: 'range'});
   FJS.addCriteria({field: 'runtime', ele: '#runtime_filter', type: 'range'});*/
@@ -83,4 +83,25 @@ function initSliders(){
   $('#all_genre').on('click', function(){
     $('#genre_criteria :checkbox').prop('checked', $(this).is(':checked'));
   });
+
+  var checked = [],
+  $check = $('.check').change(function() {
+    if (this.value == "all" && this.checked) {
+        $check.not(this).prop('disabled', true).prop('checked', false);
+        checked = [];
+       
+  });
+    }
+    else {
+      $('#all_cutting').on('click', function(){
+       $('#cutting_filter :checkbox').prop('checked', $(this).is(':checked'));
+        $check.prop('disabled', false);
+        checked.push(this);
+        checked = $(checked)
+        checked.prop('checked', false).slice(-1).prop('checked', true);
+    }
+});
+  
+
 }
+

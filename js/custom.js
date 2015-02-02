@@ -12,10 +12,10 @@
 	$(window).scroll(function() {
 		if ($(".navbar").offset().top > 50) {
 			$(".navbar-fixed-top").addClass("top-nav-collapse");
-			$(".index > .navbar-right > ul").removeClass("hide");
+			$("#page-top .navbar-right > ul").removeClass("hide");
 		} else {
 			$(".navbar-fixed-top").removeClass("top-nav-collapse");
-			$(".index > .navbar-right > ul").addClass("hide");
+			$("#page-top .navbar-right > ul").addClass("hide");
 		}
 	});
 
@@ -38,6 +38,22 @@
 	});
 
 
+//checkbox machines
+$("#cutting_filter").on("click", ":checkbox", function(event){
+  $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
+    return $(this.form).find(":checkbox:checked").length == 1;
+  });
+});
+
+
 })(jQuery);
 
 
+
+function cuttingChoose(){
+	document.getElementById("orange").selected = "true";
+	document.getElementById("cutting_filter").focus();
+	return document.getElementById("cutting_filter").click();
+	document.getElementById("orange").click();
+	alert("cut");
+}
