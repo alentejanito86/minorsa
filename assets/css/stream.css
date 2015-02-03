@@ -39,12 +39,12 @@
   border-radius: 0;
 }
 
-.criteria{
+/*.criteria{
   background-color: #D3D3D3;
   min-height: 110px;
   margin: 20px 0px;
   padding-bottom: 5px;
-}
+}*/
 
 
 .thumbnail{
@@ -190,9 +190,9 @@
   font-weight: 500;
 }
 
-.criteria .checkbox{
+/*.criteria .checkbox{
   margin-left: 20px;
-}
+}*/
 
 .criteria select{
   margin-left: 10px;

@@ -363,85 +363,146 @@
                 <div class="wow bounceInUp" data-wow-delay="0.2s">
                     <div class="boxed-grey">
                        <div class="inner">
+                            <div class="sidebar col-lg-3 col-md-3">
+                                <div class="row">
+                                    <h4 class="col-lg-8 col-md-8"> Machines (<span id="total_movies">15</span>)</h4>
+                                </div>
+                                <div>
+                                    <input type="text" id="searchbox" placeholder="Search...">
+                                    <span class="glyphicon glyphicon-search search-icon"></span>
+                                </div>
+                                <div class="panel-group" id="accordion">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            Cutting Height
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                      <div class="panel-body">
+                                        <div class="criteria" id="cutting_filter">
+                                            <!--<div class="checkbox certo"><label><input type="checkbox" value="all" id="all_cutting" class="check"><label class="style_check" for=""></label></label><h5>All</h5></div>-->
+                                            <div class="checkbox"><label><input type="checkbox" value="1" class="check">
+                                                <img class="teste" src="machines/img/cutting_height/1A-500-cut-until-7.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="2" class="check">
+                                                <img src="machines/img/cutting_height/1B-725-cut-until-8-6.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="3" class="check">
+                                                <img src="machines/img/cutting_height/1C-900-cut-until-12-7.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="4" class="check">
+                                                <img src="machines/img/cutting_height/1D-1100-cut-until-16-5.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="5" class="check">
+                                                <img src="machines/img/cutting_height/1E-1300-cut-until-19-8.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="6" class="check">
+                                                <img src="machines/img/cutting_height/1F-1600-cut-until-23-8.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="7" class="check">
+                                                <img src="machines/img/cutting_height/1G-1800-cut-until-27-7.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="8" class="check">
+                                                <img src="machines/img/cutting_height/1H-2100-cut-until-33.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="9" class="check">
+                                                <img src="machines/img/cutting_height/1J-2700-cut-until-44-8.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="10" class="check">
+                                                <img src="machines/img/cutting_height/1M-3500-cut-until-57-5.jpg"></label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="11" class="check">
+                                                <img src="machines/img/cutting_height/1P-4600-cut-until-89.jpg"></label></div>
+                                            <p>Choose the cutting height that interests you.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                          Cutting Head
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <div class="criteria" id="head_filter">
+                                            <div class="checkbox"><label><input type="checkbox" value="all" id="all_head" class="check_head">All</label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="1" class="check_head"> 1 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="2" class="check_head"> 2 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="3" class="check_head"> 3 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="4" class="check_head"> 4 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="5" class="check_head"> 5 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="6" class="check_head"> 6 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="7" class="check_head"> 7 </label></div>
+                                            <p>Choose the cutting head that interests you. </p>
+                                        </div> 
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                          Work type
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <div class="criteria" id="genre_criteria">
+                                            <div class="checkbox"><label><input type="checkbox" value="All" id="all_genre">All</label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="1"> 1 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="2"> 2 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="3"> 3 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="4"> 4 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="5"> 5 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="6"> 6 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="7"> 7 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="8"> 8 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="9"> 9 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="10"> 10 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="11"> 11 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="12"> 12 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="13"> 13 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="14"> 14 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="15"> 15 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="16"> 16 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="17"> 17 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="18"> 18 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="19"> 19 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="20"> 20 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="21"> 21 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="22"> 22 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="23"> 23 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="24"> 24 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="25"> 25 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="26"> 26 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="27"> 27 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="28"> 28 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="29"> 29 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="30"> 30 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="31"> 31 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="32"> 32 </label></div>
+                                            <div class="checkbox"><label><input type="checkbox" value="33"> 33 </label></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
 
 
-                       		<div class="sidebar col-lg-3 col-md-3">
-						    	<div class="row">
-						        	<h4 class="col-lg-8 col-md-8"> Machines (<span id="total_movies">15</span>)</h4>
-						        	<div class="col-lg-4 col-md-4 progress">
-						        		<div class="progress-bar" id="stream_progress" style="width: 0%">0 %</div>
-						        	</div>
-						    	</div>
-						    	<div>
-						        	<input type="text" id="searchbox" placeholder="Search...">
-						        	<span class="glyphicon glyphicon-search search-icon"></span>
-						        </div>
-						        <div class="criteria" id="cutting_filter">
-									<h4>Cutting Height</h4>
-									<div class="checkbox"><label><input type="checkbox" value="all" id="all_cutting" class="check">All</label></div>
-					          		<div class="checkbox"><label><input type="checkbox" value="1" class="check"> 1 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="2" class="check"> 2 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="3" class="check"> 3 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="4" class="check"> 4 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="5" class="check"> 5 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="6" class="check"> 6 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="7" class="check"> 7 </label></div>
-					          		<div class="checkbox"><label><input type="checkbox" value="8" class="check"> 8 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="9" class="check"> 9 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="10" class="check"> 10 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="11" class="check"> 11 </label></div>
-									<p>Choose the cutting height that interests you.</p>
-						        </div>
-						        <div class="criteria" id="head_filter">
-									<h4>Cutting Head</h4>
-                                    <div class="checkbox"><label><input type="checkbox" value="all" id="all_head" class="check_head">All</label></div>
-                                    <div class="checkbox"><label><input type="checkbox" value="1" class="check_head"> 1 </label></div>
-                                    <div class="checkbox"><label><input type="checkbox" value="2" class="check_head"> 2 </label></div>
-                                    <div class="checkbox"><label><input type="checkbox" value="3" class="check_head"> 3 </label></div>
-                                    <div class="checkbox"><label><input type="checkbox" value="4" class="check_head"> 4 </label></div>
-                                    <div class="checkbox"><label><input type="checkbox" value="5" class="check_head"> 5 </label></div>
-                                    <div class="checkbox"><label><input type="checkbox" value="6" class="check_head"> 6 </label></div>
-                                    <div class="checkbox"><label><input type="checkbox" value="7" class="check_head"> 7 </label></div>
-									
-									<p>Choose the cutting head that interests you. </p>
-						        </div>  
-						        <div class="criteria" id="genre_criteria">
-					        		<h4>Work type</h4>
-				          			<div class="checkbox"><label><input type="checkbox" value="All" id="all_genre">All</label></div>
-					          		<div class="checkbox"><label><input type="checkbox" value="1"> 1 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="2"> 2 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="3"> 3 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="4"> 4 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="5"> 5 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="6"> 6 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="7"> 7 </label></div>
-					          		<div class="checkbox"><label><input type="checkbox" value="8"> 8 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="9"> 9 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="10"> 10 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="11"> 11 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="12"> 12 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="13"> 13 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="14"> 14 </label></div>
-					          		<div class="checkbox"><label><input type="checkbox" value="15"> 15 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="16"> 16 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="17"> 17 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="18"> 18 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="19"> 19 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="20"> 20 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="21"> 21 </label></div>
-					          		<div class="checkbox"><label><input type="checkbox" value="22"> 22 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="23"> 23 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="24"> 24 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="25"> 25 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="26"> 26 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="27"> 27 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="28"> 28 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="29"> 29 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="30"> 30 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="31"> 31 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="32"> 32 </label></div>
-					            	<div class="checkbox"><label><input type="checkbox" value="33"> 33 </label></div>
-				            	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                       		
+						    
+						       
+						        
 				            	
 				            	 <!-- <div class="criteria" id="rating_criteria">
 						          <h4>Cutting Height</h4>

@@ -13,3 +13,38 @@ Page machines - background top
 .mp27a {background: url(../machines/img/27a/27a-1.jpg) no-repeat bottom center;}
 .mp12 {background: url(../machines/img/12/12-1.jpg) no-repeat bottom center;}
 .mp12a {background: url(../machines/img/12a/12a-1.jpg) no-repeat bottom center;}
+
+#accordion {
+	
+	margin-top: 10px;
+
+	.panel-body {
+		background-color: #d3d3d3;
+	}
+	
+	.checkbox{
+		padding-left:0px;
+
+		img {
+			opacity: .4;
+		}
+		img:hover {
+			opacity: .8;
+		}
+		
+		input[type=checkbox]:checked + img{
+			opacity: 1;
+
+				border: 2px solid $primary-color;
+
+
+		}
+
+	}
+
+	input[type=checkbox] {
+		visibility: hidden;
+	}
+
+}
+

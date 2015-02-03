@@ -78,6 +78,81 @@
   margin: 0 0 20px;
 }
 
+/* line 4, ../sass/modules/_checkbox.scss */
+#cutting_filter .certo {
+  width: 28px;
+  height: 28px;
+  background: #fcfff4;
+  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+  margin: 20px auto;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0);
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0);
+  position: relative;
+}
+/* line 27, ../sass/modules/_checkbox.scss */
+#cutting_filter .style_check {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  left: 4px;
+  top: 4px;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0), 0px 1px 0px white;
+  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0), 0px 1px 0px white;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0), 0px 1px 0px white;
+  background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
+  background: -moz-linear-gradient(top, #222222 0%, #45484d 100%);
+  background: -o-linear-gradient(top, #222222 0%, #45484d 100%);
+  background: -ms-linear-gradient(top, #222222 0%, #45484d 100%);
+  background: linear-gradient(top, #222222 0%, #45484d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+/* line 51, ../sass/modules/_checkbox.scss */
+#cutting_filter .style_check:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 5px;
+  left: 4px;
+  border: 3px solid #fcfff4;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 73, ../sass/modules/_checkbox.scss */
+#cutting_filter .style_check:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+}
+/* line 79, ../sass/modules/_checkbox.scss */
+#cutting_filter .certo input[type=checkbox]:checked + .style_check:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
 /* Layout - Page layout style */
 /*
 Page machines - background top
@@ -106,4 +181,34 @@ Page machines - background top
 /* line 15, ../sass/layout/_page-machine.scss */
 .mp12a {
   background: url(../machines/img/12a/12a-1.jpg) no-repeat bottom center;
+}
+
+/* line 17, ../sass/layout/_page-machine.scss */
+#accordion {
+  margin-top: 10px;
+}
+/* line 21, ../sass/layout/_page-machine.scss */
+#accordion .panel-body {
+  background-color: #d3d3d3;
+}
+/* line 25, ../sass/layout/_page-machine.scss */
+#accordion .checkbox {
+  padding-left: 0px;
+}
+/* line 28, ../sass/layout/_page-machine.scss */
+#accordion .checkbox img {
+  opacity: .4;
+}
+/* line 31, ../sass/layout/_page-machine.scss */
+#accordion .checkbox img:hover {
+  opacity: .8;
+}
+/* line 35, ../sass/layout/_page-machine.scss */
+#accordion .checkbox input[type=checkbox]:checked + img {
+  opacity: 1;
+  border: 2px solid #23bcd4;
+}
+/* line 45, ../sass/layout/_page-machine.scss */
+#accordion input[type=checkbox] {
+  visibility: hidden;
 }
