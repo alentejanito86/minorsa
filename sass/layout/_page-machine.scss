@@ -37,11 +37,20 @@ Page machines - background top
 
 				border: 2px solid $primary-color;
 
-
 		}
 
 	}
+	
 
+	.checkbox:first-child {
+		
+		width: 154px;
+
+		h5{
+			line-height: 28px;
+			text-align: center;
+		}
+	}
 	input[type=checkbox] {
 		visibility: hidden;
 	}

@@ -83,8 +83,9 @@ function initSliders(){
   $('#all_genre').on('click', function(){
     $('#genre_criteria :checkbox').prop('checked', $(this).is(':checked'));
   });
-$('#cutting_filter :checkbox').prop('checked', false);
-//$('#all_cutting').prop('disabled', true);
+
+  $('#cutting_filter :checkbox').prop('checked', true);
+  //$('#all_cutting').prop('disabled', true);
   $('#all_cutting').on('click', function(){
     $('#cutting_filter :checkbox').prop('checked', $(this).is(':checked'));
   });
