@@ -17,88 +17,44 @@
     <link href="css/animate.css" rel="stylesheet" />
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
         
-        <style type="text/css">
-            html {background: #999 url(bg/img/cj_gallery/graphics/bg.png);}
-            body {margin: 0px;padding: 0px;}
-            #cj-fixed-container {position: absolute;width: 100%;height: 100%;}  
-        </style>
-        
-        <!-- **************************************************** -->
-        <!-- BEGIN CODE TO COPY INTO THE HEAD TAG OF YOUR WEBPAGE -->
-        <!-- **************************************************** -->
-        
-        <!-- CSS urls for Google Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css" />
-        <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css" />
-        
-        <!-- Core GalleryJack CSS Files -->
-        <link rel="stylesheet" type="text/css" href="bg/css/cj_gallery.css?v=1" />
-        <link rel="stylesheet" type="text/css" href="bg/css/cj_gallery_fixed_size.css?v=1" />
-        <link rel="stylesheet" type="text/css" href="bg/css/cj_gallery_video.css?v=1" />
-        <!--[if lte IE 8 ]><link href="css/cj_gallery_ie_8.css?v=1" rel="stylesheet" type="text/css" /><![endif]-->
-        <!--[if lte IE 7 ]><link href="css/cj_gallery_ie_7.css?v=1" rel="stylesheet" type="text/css" /><![endif]-->
+       
         
         <!-- Browser Scripts -->
         <script src="bg/js/modernizr.min.js" type="text/javascript"></script>
         <script src="js/jquery.min.js"></script>
-        
-        <!-- GalleryJack runs on jQuery 1.10.2 -->
-        <!-- Only one instance of jQuery should be loaded into a webpage 
-        <script type="text/javascript" src="bg/js/jquery.min.js"></script> - jquery para a galeria trabalhar
 
-        -->
-        
-        <!-- GalleryJack Scripts -->
-        <script src="bg/js/jquery.address-1.5.min.js" type="text/javascript"></script>
-        <script src="bg/js/cj-galleryjack-core.js?v=1" type="text/javascript"></script>
-        <script src="bg/js/cj-top-right-buttons.min.js?v=1" type="text/javascript"></script>
-        <script src="bg/js/cj-music-player.min.js?v=1" type="text/javascript"></script>
-        <script src="bg/js/cj-contact-form.min.js?v=1" type="text/javascript"></script>
-        <script src="bg/js/cj-html-video.min.js?v=1" type="text/javascript"></script>
-        
-        <!-- Custom gallery settings -->
-        <script type="text/javascript">
-            
-            // "true" for the fullscreen version, "false" for the fixed sized version
-            var cjFullScreenMode = true, 
-            
-            /* The custom width if "cjFullScreenMode" is set to "false" */
-            cjCustomWidth = false,
-        
-            /* The custom height if "cjFullScreenMode" is set to "false" */
-            cjCustomHeight = false,
-            
-            /* Choose to use thumbnails, true/false */
-            cjUseThumbs = true,
-            
-            /* Clicking the large image will load the next image, true/false */
-            cjBgClickLoadsNext = true,
-            
-            /* Choose to use deep-linking for images, true/false */
-            cjDeepLinkMode = false,
-            
-            /* "true" for the ajax version of the gallery, "false" for the regular version (see documentation for more details) */
-            cjAjaxVersion = false,
-            
-            /* Choose to autoplay the music, true/false */
-            cjAutoPlayMusic = true,
-            
-            /* Choose to show the image info when the gallery loads, true/false */
-            cjShowInfoByDefault = false;
-        
-        </script>
-        
-        <script src="bg/js/cj-galleryjack-settings.js?v=1" type="text/javascript"></script>
-        
-        <!-- ************************************************** -->
-        <!-- END CODE TO COPY INTO THE HEAD TAG OF YOUR WEBPAGE -->
-        <!-- ************************************************** -->
-       
+                <link rel="stylesheet" type="text/css" href="css/style-elastislide.css" />
+        <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+        <noscript>
+            <style>
+                .es-carousel ul{
+                    display:block;
+                }
+            </style>
+        </noscript>
+        <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">    
+            <div class="rg-image-wrapper">
+                {{if itemsCount > 1}}
+                    <div class="rg-image-nav">
+                        <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                        <a href="#" class="rg-image-nav-next">Next Image</a>
+                    </div>
+                {{/if}}
+                <div class="rg-image"></div>
+                <div class="rg-loading"></div>
+                <div class="rg-caption-wrapper">
+                    <div class="rg-caption" style="display:none;">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </script>   
     </head>
     
 
-	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<body id="page-top" class="about" data-spy="scroll" data-target=".navbar-custom">
     <!-- Preloader -->
     <div id="preloader">
       <div id="load"></div>
@@ -146,175 +102,12 @@
     </nav>
    <!-- Section: intro -->
     <section id="intro" class="intro">
-        <div id="cj-fixed-container">
-        
-            <!-- ******************** -->
-            <!-- BEGIN GALLERY MARKUP -->
-            <!-- ******************** -->
-            
-            <div id="cj-gallery">
-                <noscript><img src="bg/img/cj_gallery/photos/fashion/1.jpg" width="100" height="100" alt="alternate image" /></noscript>
-                <audio id="cj-music">
-                    <object type="application/x-shockwave-flash" data="bg/flash/gallery_music.swf" width="0" height="0" id="cj-fallback">
-                        <param name="movie" value="bg/flash/gallery_music.swf" />
-                        <param name="allowScriptAccess" value="always" />
-                        <param name="bgcolor" value="#000000" />
-                    </object>
-                </audio>
-                <div id="cj-image-info">
-                    <span class="cj-close-info"></span>
-                    <p id="cj-image-info-text"></p>
-                </div>
-                <div id="cj-author-info">
-                    <div id="cj-preloader"><img src="bg/img/cj_gallery/graphics/preloader.gif" width="19" height="19" alt="preloader" /></div>
-                    <div id="cj-info-button">   
-                        <span class="cj-cursive-font">&copy; Minorsa Photographys </span>
-                    </div>
-                    <div id="cj-email-button">     
-                        <form method="POST" id="cj-contact-form" action="#">       
-                            <fieldset>       
-                                <input class="cj-field" type="text" value="Name" name="name-required" maxlength="30" /><br />
-                                <input class="cj-field" type="text" value="Email" name="email-required" maxlength="30" /><br />      
-                                <textarea name="message-required">Message</textarea><br />    
-                                <input id="cj-submit" type="submit" value="Send" name="submit" />       
-                            </fieldset>                                
-                        </form>                    
-                    </div>                   
-                    <div id="cj-share-button"></div>
-                    <div id="cj-music-button">
-                        <div id="cj-music-meta">
-                            <span class="cj-music-numbers">/</span>
-                            <span class="cj-current-song"></span>
-                        </div>
-                        <div id="cj-music-controls">
-                            <span class="cj-music-left"></span>
-                            <span class="cj-music-pause"></span>
-                            <span class="cj-music-play"></span>
-                            <span class="cj-music-right"></span>
-                        </div>    
-                    </div>
-                </div>
-                <div id="cj-footer">
-                    <div id="cj-gallery-controls">
-                        <span class="cj-left-icon"></span>
-                        <span class="cj-info-icon"></span>
-                        <span class="cj-up-icon"></span>
-                        <span class="cj-close-icon"></span>
-                        <span class="cj-pause-icon"></span>
-                        <span class="cj-play-icon"></span>
-                        <span class="cj-right-icon"></span>
-                    </div>
-                    <div id="cj-footer-container"> 
-                        <div id="cj-thumb-container">
-                            <div id="cj-thumbnails"></div>
-                        </div>
-                        <div id="cj-categories"></div>
-                    </div>
-                </div>
-                <div id="cj-thumb-tooltip"></div>
-                <div id="cj-video-player">
-                    <div id="cj-vid-controls">
-                        <div class="cj-vid-play-pause">
-                            <img class="cj-vid-play" src="bg/img/cj_gallery/graphics/vid_play.png" width="6" height="12" alt="play video" />
-                            <img class="cj-vid-pause" src="bg/img/cj_gallery/graphics/vid_pause.png" width="6" height="10" alt="pause video" />
-                        </div>
-                        <div class="cj-vid-lines">
-                            <span class="cj-vid-total"></span>
-                            <span class="cj-vid-progress"></span>
-                        </div>
-                        <div class="cj-vid-vol-buttons">
-                            <img class="cj-vid-volume" src="bg/img/cj_gallery/graphics/vid_volume.png" width="13" height="10" alt="video volume" />
-                            <img class="cj-vid-mute" src="bg/img/cj_gallery/graphics/vid_mute.png" width="7" height="10" alt="volume mute" />
-                        </div>
-                        <div class="cj-vid-vol-lines">
-                            <span class="cj-vid-vol-total"></span>
-                            <span class="cj-vid-vol-current"></span>
-                        </div>
-                        <div class="cj-vid-fullscreen">
-                            <img class="cj-vid-full" src="bg/img/cj_gallery/graphics/fullscreen.png" width="10" height="10" alt="fullscreen" />
-                            <img class="cj-vid-normal" src="bg/img/cj_gallery/graphics/normalscreen.png" width="10" height="10" alt="normal screen" />
-                        </div>
-                    </div>
-                </div>
-                <!-- ************************* -->
-                <!-- BEGIN GALLERY IMAGE LISTS -->
-                <!-- ************************* -->
-                <div id="cj-bg-images">
-                    <ul title="History" class="cj-stretch cj-wipe" data-rel="100x67">
-                        <li>
-                            <ul>
-                                <li class="cj-large" title="bg/img/index/1.jpg"></li>
-                                <li class="cj-thumb" title="bg/img/index/thumbs/1.jpg">Image One</li>
-                                <li class="cj-info">
-                                    <h2>Convento de Mafra</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit a Ut rutrum orci ut massa semper luctus. Suspendi sagist, sem id consectetur scelerisque, turpis velit varius elit, ac dictum ipsum tortor id justo. <a href="#" target="_blank">LINK</a></p>
-                                </li>
-                           </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li class="cj-large" title="bg/img/index/2.jpg"></li>
-                                <li class="cj-thumb" title="bg/img/index/thumbs/2.jpg">Image Two</li>
-                                <li class="cj-info">
-                                    <h2>Instalações</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit a Ut rutrum orci ut massa semper luctus. Suspendi sagist, sem id consectetur scelerisque, turpis velit varius elit, ac dictum ipsum tortor id justo. <a href="#" target="_blank">LINK</a></p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li class="cj-large" title="bg/img/index/3.jpg"></li>
-                                <li class="cj-thumb" title="bg/img/index/thumbs/3.jpg">Image Three</li>
-                                <li class="cj-info">
-                                    <h2>models image three</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit a Ut rutrum orci ut massa semper luctus. Suspendi sagist, sem id consectetur scelerisque, turpis velit varius elit, ac dictum ipsum tortor id justo. <a href="#" target="_blank">LINK</a></p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li class="cj-large" title="bg/img/index/4.jpg"></li>
-                                <li class="cj-thumb" title="bg/img/index/thumbs/4.jpg">Image Four</li>
-                                <li class="cj-info">
-                                    <h2>models image four</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit a Ut rutrum orci ut massa semper luctus. Suspendi sagist, sem id consectetur scelerisque, turpis velit varius elit, ac dictum ipsum tortor id justo. <a href="#" target="_blank">LINK</a></p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>                                    
-                                <li class="cj-large" title="bg/img/index/5.jpg"></li>
-                                <li class="cj-thumb" title="bg/img/index/thumbs/5.jpg">Image Five</li>
-                                <li class="cj-info">
-                                    <h2>models image five</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit a Ut rutrum orci ut massa semper luctus. Suspendi sagist, sem id consectetur scelerisque, turpis velit varius elit, ac dictum ipsum tortor id justo. <a href="#" target="_blank">LINK</a></p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="cj-preload">
-                    <img src="bg/img/cj_gallery/graphics/video_play.png" width="50" height="110" alt="video play" />
-                    <img src="bg/img/cj_gallery/graphics/video_close.png" width="26" height="54" alt="video close" />
-                    <img src="bg/img/cj_gallery/graphics/thumb_left.png" width="14" height="60" alt="thumb left" />
-                    <img src="bg/img/cj_gallery/graphics/thumb_right.png" width="14" height="60" alt="thumb right" />
-                    <img src="bg/img/cj_gallery/graphics/music_play.png" width="22" height="46" alt="music play" />
-                    <img src="bg/img/cj_gallery/graphics/vid_bg.png" width="30" height="28" alt="video bg" />
-                    <img src="bg/img/cj_gallery/graphics/vid_progress.png" width="10" height="28" alt="video progress" />
-                    <img src="bg/img/cj_gallery/graphics/vid_total.png" width="10" height="28" alt="video total" />
-                    <img src="bg/img/cj_gallery/graphics/video_preloader.gif" width="31" height="31" alt="video preloader" />
-                </div>       
-            </div>
-            <!-- ****************** -->
-            <!-- END GALLERY MARKUP -->
-            <!-- ****************** -->
-        </div>
         <div class="slogan">
             <h2>About <span class="text_color">MINORSA</span> </h2>
             <h4>Frase que voçê queira introduzir</h4>
         </div>
         <div class="page-scroll">
-            <a href="#about" class="btn btn-circle">
+            <a href="#carousel" class="btn btn-circle">
                 <i class="fa fa-angle-double-down animated color-i"></i>
             </a>
         </div>
@@ -324,14 +117,14 @@
     <!-- 
     Section: about 
     -->
-    <section id="about" class="home-section text-center">
+    <section id="carousel" class="home-section text-center">
         <div class="heading-about">
             <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="wow bounceInDown" data-wow-delay="0.4s">
                     <div class="section-heading">
-                    <h2>About</h2>
+                    <h2>Look at our history</h2>
                     <i class="fa fa-2x fa-angle-down"></i>
 
                     </div>
@@ -352,20 +145,120 @@
                 <div class="wow bounceInUp" data-wow-delay="0.2s">
                 <div class="boxed-grey">
                     <div class="inner">
-                        <h4>History</h4>
-                        <p class="text-justify"><img src="img/about/1.jpg">A empresa Minorça tem-se dedicado ao longo dos seus mais de 30 anos de existência à construção e desenvolvimento de equipamentos exclusivamente para a indústria das rochas ornamentais.</p>
+                        <h4>Our history</h4>
+                        <div id="rg-gallery" class="rg-gallery">
+                            <div class="rg-thumbs">
+                                <!-- Elastislide Carousel Thumbnail Viewer -->
+                                <div class="es-carousel-wrapper">
+                                    <div class="es-nav">
+                                        <span class="es-nav-prev">Previous</span>
+                                        <span class="es-nav-next">Next</span>
+                                    </div>
+                                    <div class="es-carousel">
+                                        <ul>
+                                            <li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/2.jpg" data-large="images/2.jpg" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/3.jpg" alt="image03" data-description="A plaintful story from a sistering vale" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/4.jpg" alt="image04" data-description="My spirits to attend this double voice accorded" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/5.jpg" data-large="images/5.jpg" alt="image05" data-description="And down I laid to list the sad-tuned tale" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/6.jpg" data-large="images/6.jpg" alt="image06" data-description="Ere long espied a fickle maid full pale" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/7.jpg" data-large="images/7.jpg" alt="image07" data-description="Tearing of papers, breaking rings a-twain" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/8.jpg" data-large="images/8.jpg" alt="image08" data-description="Storming her world with sorrow's wind and rain" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/9.jpg" data-large="images/9.jpg" alt="image09" data-description="Upon her head a platted hive of straw" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/10.jpg" data-large="images/10.jpg" alt="image10" data-description="Which fortified her visage from the sun" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/11.jpg" data-large="images/11.jpg" alt="image11" data-description="Whereon the thought might think sometime it saw" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/12.jpg" data-large="images/12.jpg" alt="image12" data-description="The carcass of beauty spent and done" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/13.jpg" data-large="images/13.jpg" alt="image13" data-description="Time had not scythed all that youth begun" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/14.jpg" data-large="images/14.jpg" alt="image14" data-description="Nor youth all quit; but, spite of heaven's fell rage" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/15.jpg" data-large="images/15.jpg" alt="image15" data-description="Some beauty peep'd through lattice of sear'd age" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/16.jpg" data-large="images/16.jpg" alt="image16" data-description="Oft did she heave her napkin to her eyne" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/17.jpg" data-large="images/17.jpg" alt="image17" data-description="Which on it had conceited characters" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/18.jpg" data-large="images/18.jpg" alt="image18" data-description="Laundering the silken figures in the brine" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/19.jpg" data-large="images/19.jpg" alt="image19" data-description="That season'd woe had pelleted in tears" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/20.jpg" data-large="images/20.jpg" alt="image20" data-description="And often reading what contents it bears" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/21.jpg" data-large="images/21.jpg" alt="image21" data-description="As often shrieking undistinguish'd woe" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/22.jpg" data-large="images/22.jpg" alt="image22" data-description="In clamours of all size, both high and low" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/23.jpg" data-large="images/23.jpg" alt="image23" data-description="Sometimes her levell'd eyes their carriage ride" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/24.jpg" data-large="images/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/13.jpg" data-large="images/13.jpg" alt="image13" data-description="Time had not scythed all that youth begun" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/14.jpg" data-large="images/14.jpg" alt="image14" data-description="Nor youth all quit; but, spite of heaven's fell rage" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/15.jpg" data-large="images/15.jpg" alt="image15" data-description="Some beauty peep'd through lattice of sear'd age" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/16.jpg" data-large="images/16.jpg" alt="image16" data-description="Oft did she heave her napkin to her eyne" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/17.jpg" data-large="images/17.jpg" alt="image17" data-description="Which on it had conceited characters" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/18.jpg" data-large="images/18.jpg" alt="image18" data-description="Laundering the silken figures in the brine" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/19.jpg" data-large="images/19.jpg" alt="image19" data-description="That season'd woe had pelleted in tears" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/20.jpg" data-large="images/20.jpg" alt="image20" data-description="And often reading what contents it bears" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/21.jpg" data-large="images/21.jpg" alt="image21" data-description="As often shrieking undistinguish'd woe" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/22.jpg" data-large="images/22.jpg" alt="image22" data-description="In clamours of all size, both high and low" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/23.jpg" data-large="images/23.jpg" alt="image23" data-description="Sometimes her levell'd eyes their carriage ride" /></a></li>
+                                            <li><a href="#"><img src="images/thumbs/24.jpg" data-large="images/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Elastislide Carousel Thumbnail Viewer -->
+                            </div><!-- rg-thumbs -->
+                        </div><!-- rg-gallery -->
+                        <script type="text/javascript" src="js/about-jquery.tmpl.min.js"></script>
+                        <script type="text/javascript" src="js/about-jquery.easing.1.3.js"></script>
+                        <script type="text/javascript" src="js/about-jquery.elastislide.js"></script>
+                        <script type="text/javascript" src="js/about-gallery-about.js"></script>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>      
+    </section>
+    <!-- 
+    /Section: about 
+    -->
+
+
+    <!-- 
+    Section: about 
+    -->
+    <section id="about" class="home-section text-center">
+        <div class="heading-about">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="wow bounceInDown" data-wow-delay="0.4s">
+                    <div class="section-heading">
+                    <h2>Read about us</h2>
+                    <i class="fa fa-2x fa-angle-down"></i>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-5">
+                <hr class="marginbot-50">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="wow bounceInUp" data-wow-delay="0.2s">
+                <div class="boxed-grey">
+                    <div class="inner">
+                        <h4>Our history marked</h4>
+                        <p class="text-justify">A empresa Minorça tem-se dedicado ao longo dos seus mais de 30 anos de existência à construção e desenvolvimento de equipamentos exclusivamente para a indústria das rochas ornamentais.</p>
                         <p class="text-justify">Iniciando os seus trabalhos numa acção local para o pólo industrial de Pêro Pinheiro, onde enveredou logo por uma tentativa de varias opções de oferta, porque na década de 70, a maioria das firmas do ramo estariam situadas nesta zona.</p>
                         <p class="text-justify">Os equipamentos de inicio e durante um período de aproximadamente 7 anos eram feitos por encomenda e facturados em nome pessoal do sócio fundador, mas com a procura acima da capacidade produtiva, foi criada a Minorca - Fabricante de Maquinas Industriais, Lda em 1985, a qual passou a ter um maior numero de pessoal, aumento das instalações fabris, departamento de projecto, melhores equipamentos produtivos por controle numérico em 1989 em conjunto com 1 estação de CAD/CAM, sendo a primeira empresa em Portugal a ter estas soluções disponíveis para a construção de equipamentos no seu ramo de actividade.</p>
-                        <p class="text-justify"><img src="img/about/2.jpg" style="float:left; margin-right: 10px;">Através da colocação de serviços pós-venda tem vindo a deslocar-se para outras zonas de mercado, em 1983 passou a trabalhar o mercado das pedreiras em Vila Viçosa, em 1987/88 iniciou o fornecimento nas pedreiras de Porto de Mos, passando em 1993/94 para o sector da transformação nesta mesma zona.</p>
+                        <p class="text-justify">Através da colocação de serviços pós-venda tem vindo a deslocar-se para outras zonas de mercado, em 1983 passou a trabalhar o mercado das pedreiras em Vila Viçosa, em 1987/88 iniciou o fornecimento nas pedreiras de Porto de Mos, passando em 1993/94 para o sector da transformação nesta mesma zona.</p>
                         <p class="text-justify">Vindo a intensificar a acção comercial nos anos de 1993/94, passou a fornecer clientes mais a norte do país, focando a sua produção na gama do corte por disco.</p>
                         <p class="text-justify">Com vendas para outros países, até agora consideradas pontuais, devido à procura pelo mercado nacional absorver quase por completo a capacidade produtiva, a Minorca possui hoje equipamentos em Marrocos, Brasil, Suécia, França, Angola, Estados Unidos, Inglaterra e Espanha, estando neste último com uma acção directa nos anos de 2005 a 2007 na Estremadura.</p>
                         <p class="text-justify">Vai agora lançar uma campanha comercial directa no mercado de França onde tem denotado uma boa aceitação dos seus produtos.</p>
                         <p class="text-justify">A participação em eventos promocionais (feiras e exposições) tem incidido a nível nacional, embora tenha já feito promoções no exterior, como Espanha, Marrocos, Itália e Brasil.</p>
                         <p></p>
-                        <img src="img/about/3.jpg">
                         <p class="text-justify">A nível de Projecto e Inovação a Minorca tem-se destacado dos restantes fabricantes com a procura continua de novidades e qualidade nos produtos, logo desde a sua origem com a Maquina de escacilhar mármores como primeiro equipamento concebido, depois com as maquinas de corte por fio diamantado para as pedreiras (primeira em Portugal), passando pelas com motorização diesel (primeira no desenvolvimento mundial), as torres perfuradoras para perfurar o granito, onde desenvolveu um modelo de pequenas dimensões com coluna orientável (primeira a nível de desenvolvimento mundial).</p>
                         <p class="text-justify">Em 1987, criou em exclusivo mundial em exclusivo mundial a máquina totalmente monobloco de médias dimensões, produzida em série, a qual teria sido objecto de patente se na altura tivesse havido percepção de tão enorme aceitação de mercado, em 1993/94 criou a máquina de corte por jacto de água, desenvolveu uma aplicação de barramentos que permitem uma ausência quase total de atritos nos deslocamentos, solução esta que se mantém até ao momento como uma referência na sua categoria, concebeu estruturas metalo-soldadas poliventes do ponto de vista das suas dimensões mas mantendo o seu modelo standard, quando outros fabricantes se mantinham com base na fundição e em padrões com base em copias de tecnologia já ultrapassada.</p>
-                        <p class="text-justify"><img src="img/about/4.jpg" style="float:left; margin-right:10px; ">Destaque também para os equipamentos para tratamento de águas residuais provenientes do trabalho na pedra, onde a empresa possui um modelo patenteado.</p>
+                        <p class="text-justify">Destaque também para os equipamentos para tratamento de águas residuais provenientes do trabalho na pedra, onde a empresa possui um modelo patenteado.</p>
                         <p class="text-justify">Salientamos que em qualquer destes equipamentos acima descritos a Minorça foi pioneira no desenvolvimento e produção em Portugal, criando ao longo do tempo novas versões e aperfeiçoamentos quer em qualidade, quer em ajustes ao mercado.</p>
                         <p class="text-justify">Actualmente a empresa procura oferecer o melhor nível de qualidade e criar, fruto de uma postura activa em matéria de investigação e desenvolvimento, uma sólida experiência e know e uma equipa fortemente especializada em metalomecânica semi-pesada para equipamentos (sempre acima das 4 ton. até 40 toneladas), polivalências em certos modelos, sempre com o intuito de maximizar a rentabilidade e produtividade dos seus clientes.</p>
                     </div>
@@ -380,88 +273,7 @@
     /Section: about 
     -->
 
-    <!--
-    Section: carousel
-    -->
-    <section class="home-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
-                    <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                        </ol>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/time-line/2.jpg" alt="...">
-                                <div class="carousel-caption">
-                                 <p>imagem 2</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/time-line/3.jpg" alt="...">
-                                <div class="carousel-caption">
-                                 <p>imagem 3</p>
-                                </div>
-                            </div>
-                            <div class="item active">
-                                <img src="img/time-line/4.jpg" alt="...">
-                                <div class="carousel-caption">
-                                 <p>imagem 4</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/time-line/5.jpg" alt="...">
-                                <div class="carousel-caption">
-                                 <p>imagem 5</p>
-                                </div>
-                            </div>
-                            <div class="item active">
-                                <img src="img/time-line/6.jpg" alt="...">
-                                <div class="carousel-caption">
-                                 <p>imagem 6</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/time-line/7.jpg" alt="...">
-                                <div class="carousel-caption">
-                                 <p>imagem 7</p>
-                                </div>
-                            </div>
-                            <div class="item active">
-                                <img src="img/time-line/7.jpg" alt="...">
-                                <div class="carousel-caption">
-                                 <p>imagem 7</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--
-    /Section: carousel
-    -->
 
    <!--
     Section: contact
