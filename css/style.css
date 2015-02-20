@@ -302,39 +302,14 @@ hr {
 
 
 
+
+
+
 /* ===========================
---- Intro
+--- About index
 ============================ */
 
-.intro {
-	width:100%;
-	position:relative;
-	
-	/*background: url(../img/bg1.jpg) no-repeat top center;*/
-}
-/*#page-machine-61b .intro {
-  background: url(../machines/img/61b/61b-1.jpg) no-repeat bottom center;
-  background-size: auto 100%;
-  background-color: #fff;
-}*/
 
-.about{
-    background: url(../img/bg1.jpg) no-repeat top center;
-}
-
-#intro.intro {
-	/*padding:20% 0 0 0;*/
-}
-
-.intro .slogan {
-	text-align: center;
-  z-index: 10000;
-  padding:20% 0 0 0;
-}
-
-.intro .page-scroll {
-	text-align: center;
-}
 
 .brand-heading {
     font-size: 40px;
@@ -343,32 +318,6 @@ hr {
 .intro-text {
     font-size: 18px;
 }
-
-.intro .slogan h2 {
-	color: #FBFF00;
-	text-shadow: none;
-	font-size: 60px;
-	line-height: 60px;
-	font-weight: 700;
-	font-family: Montserrat, sans-serif;
-	background-color: rgba(0, 0, 0, 0);
-	text-decoration: none;
-	text-transform: uppercase;
-	border-width: 0px;
-	border-color: #000;
-	border-style: none;
-	text-shadow: -1px 0 1px #000;
-}
-
-.intro .slogan h4 {
-	color: #FBFF00;
-	text-shadow: -1px 1px 1px #000;
-}
-
-
-/* ===========================
---- About index
-============================ */
 
 .boxed-grey {
 	background: #f9f9f9;
@@ -454,6 +403,11 @@ hr {
 }
 #galeria li {
   list-style: none;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#galeria li:hover {
+  background-color: #fff;
 }
 #galeria img {
   width: 98%;
