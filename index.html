@@ -20,7 +20,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="main.css">    
+    <link rel="stylesheet" type="text/css" href="main.css">  
+    
+
         <style type="text/css">
 			html {background: #999 url(bg/img/cj_gallery/graphics/bg.png);}
 			body {margin: 0px;padding: 0px;}
@@ -45,7 +47,7 @@
         <!-- Browser Scripts -->
         <script src="bg/js/modernizr.min.js" type="text/javascript"></script>
         <script src="js/jquery.min.js"></script>
-        
+        <script src="js/bpopup.js" type="text/javascript"></script><!-- POPUP acreditação-->
         <!-- GalleryJack runs on jQuery 1.10.2 -->
         <!-- Only one instance of jQuery should be loaded into a webpage 
     	<script type="text/javascript" src="bg/js/jquery.min.js"></script> - jquery para a galeria trabalhar
@@ -105,7 +107,7 @@
 	<div id="preloader">
 	  <div id="load"></div>
 	</div>
-
+    
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
@@ -136,6 +138,15 @@
         </div>
         <!-- /.container -->
     </nav>
+<!--==========NOVIDADES===============-->
+    
+    <div id="mensagem">     
+        <h2>Welcome to minorsa</h2>
+        <h4>Come to visit our <a href="accredtitation.html">accreditation</a> page</h4>
+        <h4><a href="accredtitation.html"><i class="fa fa-arrow-circle-o-right" alt="visit page"></i></a><span>Visit</span><a href="#" class=" b-close " ><i class="fa fa-times-circle-o"></i></a><span>Close</span></h4>
+        
+        <br>
+    </div>
 
 	<!-- Section: intro -->
     <section id="intro" class="intro">
@@ -547,7 +558,7 @@
                     <div class="inner">
 						<h5>About us</h5>
                         <p class="subtitle"><a href="about.html">Read More...</a></p>
-                        <div class="avatar"><img src="img/index-buttons/about.jpg" alt="" class="img-responsive img-circle" /></div>
+                        <div class="avatar"><img src="img/buttons/about.jpg" alt="" class="img-responsive img-circle" /></div>
                     </div>
                 </div>
 				</div>
@@ -558,7 +569,7 @@
                     <div class="inner">
 						<h5>Machines</h5>
                         <p class="subtitle"><a href="machines.html">Read More...</a></p>
-                        <div class="avatar"><img src="img/index-buttons/machines.jpg" alt="" class="img-responsive img-circle" /></div>
+                        <div class="avatar"><img src="img/buttons/machines.jpg" alt="" class="img-responsive img-circle" /></div>
 
                     </div>
                 </div>
@@ -570,7 +581,7 @@
                     <div class="inner">
 						<h5>Works</h5>
                         <p class="subtitle"><a href="works.html">Read More...</a></p>
-                        <div class="avatar"><img src="img/index-buttons/work.jpg" alt="" class="img-responsive img-circle" /></div>
+                        <div class="avatar"><img src="img/buttons/work.jpg" alt="" class="img-responsive img-circle" /></div>
 
                     </div>
                 </div>
@@ -582,7 +593,7 @@
                     <div class="inner">
 						<h5>Contacts</h5>
                         <p class="subtitle"><a href="contact.html">Read More...</a></p>
-                        <div class="avatar"><img src="img/index-buttons/contact.jpg" alt="" class="img-responsive img-circle" /></div>
+                        <div class="avatar"><img src="img/buttons/contact.jpg" alt="" class="img-responsive img-circle" /></div>
 
                     </div>
                 </div>
@@ -779,6 +790,18 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
 
+        <script>//NOVIDADES AUTOMATICAMENTE
+                    
+                   $('#mensagem').bPopup({
+                        easing: 'easeOutBack', //uses jQuery easing plugin
+                        speed: 450,
+                        transition: 'slideDown'
+                    }); 
+        </script>
+
 </body>
 
 </html>
+
+
+

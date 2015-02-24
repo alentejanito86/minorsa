@@ -1,7 +1,7 @@
 .rg-image-wrapper{
 	position:relative;
 	padding:20px 30px;
-	background:transparent url(../img/about/black.png) repeat top left;
+	background:#fff;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;

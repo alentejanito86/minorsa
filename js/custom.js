@@ -45,7 +45,6 @@ $("#cutting_filter").on("click", ":checkbox", function(event){
   });
 });
 
-
 })(jQuery);
 
 
@@ -77,7 +76,7 @@ jQuery(document).ready(function($){
 end /About Vertical Timeline
 **************************/
 
-
+ 
 
 function cuttingChoose(){
 	document.getElementById("orange").selected = "true";
