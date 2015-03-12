@@ -205,6 +205,138 @@
   background-size: auto 100%;
   background-color: #fff;
 }*/
+/* line 2, ../sass/layout/_nav.scss */
+.navbar {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(234, 59, 59, 0.3);
+  z-index: 999999;
+  background-color: #23bcd4;
+}
+@media only screen and (min-width: 767px) {
+  /* line 2, ../sass/layout/_nav.scss */
+  .navbar {
+    padding: 20px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    background-color: rgba(35, 188, 212, 0.5);
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+}
+
+/* line 23, ../sass/layout/_nav.scss */
+.navbar-brand {
+  font-weight: 700;
+  height: 40px;
+  padding: 5px 15px;
+  font-size: 18px;
+  line-height: 1em;
+}
+/* line 30, ../sass/layout/_nav.scss */
+.navbar-brand:focus {
+  outline: 0;
+}
+
+/*.nav.navbar-nav {
+    background-color: rgba(255,255,255,.4);
+}*/
+/* line 41, ../sass/layout/_nav.scss */
+.nav-active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 47, ../sass/layout/_nav.scss */
+.navbar-custom.top-nav-collapse {
+  @includ MQ(M) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+}
+/* line 49, ../sass/layout/_nav.scss */
+.navbar-custom.top-nav-collapse .nav.navbar-nav {
+  background-color: rgba(0, 0, 0, 0);
+}
+/* line 53, ../sass/layout/_nav.scss */
+.navbar-custom.top-nav-collapse ul.nav li a {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+}
+/* line 60, ../sass/layout/_nav.scss */
+.navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
+  color: #666;
+}
+/* line 69, ../sass/layout/_nav.scss */
+.navbar-custom ul.nav li a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 76, ../sass/layout/_nav.scss */
+.navbar-custom ul.nav li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 82, ../sass/layout/_nav.scss */
+.navbar-custom ul.nav ul.dropdown-menu {
+  border-radius: 0;
+}
+/* line 85, ../sass/layout/_nav.scss */
+.navbar-custom ul.nav ul.dropdown-menu li {
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 88, ../sass/layout/_nav.scss */
+.navbar-custom ul.nav ul.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+/* line 92, ../sass/layout/_nav.scss */
+.navbar-custom ul.nav ul.dropdown-menu li a {
+  padding: 10px 20px;
+  color: #000;
+}
+/* line 96, ../sass/layout/_nav.scss */
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+  background: rgba(35, 188, 212, 0.5);
+}
+/* line 104, ../sass/layout/_nav.scss */
+.navbar-custom nav li a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+/* line 109, ../sass/layout/_nav.scss */
+.navbar-custom nav li a:hover, .navbar-custom nav li a:focus, .navbar-custom nav li a .active {
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 114, ../sass/layout/_nav.scss */
+.navbar-custom nav li a:hover, .navbar-custom nav li a:focus, .navbar-custom nav li a .active {
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 122, ../sass/layout/_nav.scss */
+.navbar-toggle {
+  padding: 4px 6px;
+  font-size: 14px;
+  color: #fff;
+}
+/* line 127, ../sass/layout/_nav.scss */
+.navbar-toggle:focus, .navbar-toggle:active {
+  outline: 0;
+}
+
+@media only screen and (min-width: 767px) {
+  /* line 135, ../sass/layout/_nav.scss */
+  .top-nav-collapse {
+    padding: 0;
+    background-color: #23bcd4;
+  }
+}
 /*
 Page machines - background top
 */
@@ -215,60 +347,73 @@ Page machines - background top
 }
 
 /* line 12, ../sass/layout/_page-machine.scss */
-.mp61b {
-  background: url(../machines/img/61b/61b-1.jpg) no-repeat bottom center;
+.pp06 {
+  background: url(../machines/img/06/pp06-1.jpg) no-repeat bottom center;
 }
 
 /* line 13, ../sass/layout/_page-machine.scss */
-.mp27a {
-  background: url(../machines/img/27a/27a-1.jpg) no-repeat bottom center;
-}
-
-/* line 14, ../sass/layout/_page-machine.scss */
 .mp12 {
   background: url(../machines/img/12/12-1.jpg) no-repeat bottom center;
 }
 
-/* line 15, ../sass/layout/_page-machine.scss */
+/* line 14, ../sass/layout/_page-machine.scss */
 .mp12a {
   background: url(../machines/img/12a/12a-1.jpg) no-repeat bottom center;
 }
 
-/* line 17, ../sass/layout/_page-machine.scss */
+/* line 15, ../sass/layout/_page-machine.scss */
+.mp27a {
+  background: url(../machines/img/27a/27a-1.jpg) no-repeat bottom center;
+}
+
+/* line 16, ../sass/layout/_page-machine.scss */
+.mp61b {
+  background: url(../machines/img/61b/61b-1.jpg) no-repeat bottom center;
+}
+
+/* line 18, ../sass/layout/_page-machine.scss */
 #accordion {
   margin-top: 10px;
 }
-/* line 21, ../sass/layout/_page-machine.scss */
+/* line 22, ../sass/layout/_page-machine.scss */
 #accordion .panel-body {
   background-color: #d3d3d3;
 }
-/* line 25, ../sass/layout/_page-machine.scss */
+/* line 26, ../sass/layout/_page-machine.scss */
 #accordion .checkbox {
   padding-left: 0px;
 }
-/* line 28, ../sass/layout/_page-machine.scss */
+/* line 29, ../sass/layout/_page-machine.scss */
 #accordion .checkbox img {
   opacity: .4;
+  z-index: 1;
 }
-/* line 31, ../sass/layout/_page-machine.scss */
+/* line 33, ../sass/layout/_page-machine.scss */
 #accordion .checkbox img:hover {
   opacity: .8;
 }
-/* line 35, ../sass/layout/_page-machine.scss */
+/* line 37, ../sass/layout/_page-machine.scss */
+#accordion .checkbox p {
+  margin: 0;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: -17px;
+}
+/* line 44, ../sass/layout/_page-machine.scss */
 #accordion .checkbox input[type=checkbox]:checked + img {
   opacity: 1;
   border: 2px solid #23bcd4;
 }
-/* line 45, ../sass/layout/_page-machine.scss */
+/* line 55, ../sass/layout/_page-machine.scss */
 #accordion .checkbox:first-child {
   width: 154px;
 }
-/* line 49, ../sass/layout/_page-machine.scss */
+/* line 59, ../sass/layout/_page-machine.scss */
 #accordion .checkbox:first-child h5 {
   line-height: 28px;
   text-align: center;
 }
-/* line 54, ../sass/layout/_page-machine.scss */
+/* line 64, ../sass/layout/_page-machine.scss */
 #accordion input[type=checkbox] {
   visibility: hidden;
 }
@@ -419,7 +564,7 @@ header h1 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #dbd9ba, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #dbd9ba, inset 0 2px 0 rgba(0, 0, 0, 0), 0 3px 0 4px rgba(0, 0, 0, 0);
   background-color: #F8F7E0;
 }
 

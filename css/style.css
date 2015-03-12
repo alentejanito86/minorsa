@@ -56,7 +56,7 @@ a:focus {
     font-weight: 400;
 }
 
-.navbar {
+/*.navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
 	 z-index:999999;
@@ -267,7 +267,7 @@ hr {
 	display:block;
     position:relative;
     z-index:120;
-    background-color: #F8F8F8;
+    background-color: #FFF;
 }
 
 
@@ -286,7 +286,7 @@ hr {
 }
 
 .bg-gray {
-	background: #f8f8f8;
+	background: #fff;
 }
 
 
@@ -349,7 +349,6 @@ box-shadow: 0px 0px 50px -10px #23BCD4;
 }
 
 .boxed-grey {
-	background: #f9f9f9;
 	padding: 20px;
 }
 
@@ -469,10 +468,9 @@ box-shadow: 0px 0px 50px -10px #23BCD4;
   text-align: center;
   cursor: pointer;
   padding: 0;
-  border-radius: 25px;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px rgb(136, 136, 136);
-}
+  width: 100%;
+  
+  }
 
 .grid figure img {
   position: relative;
@@ -534,87 +532,90 @@ box-shadow: 0px 0px 50px -10px #23BCD4;
   font-size: 68.5%;
 }
 /*---------------*/
-/***** Lexi *****/
+/***** Chico *****/
 /*---------------*/
 
-figure.effect-lexi {
-  background: -webkit-linear-gradient(-45deg, #000 0%,#fff 100%);
-  background: linear-gradient(-45deg, #000 0%,#fff 100%);
-}
-
 figure.effect-lexi img {
-  max-width: 300px;
-  margin: -10px 0 0 -10px;
-  width: -webkit-calc(100% + 10px);
-  width: calc(100% + 10px);
-  opacity: 0.9;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(10px,10px,0);
-  transform: translate3d(10px,10px,0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
 }
 
-figure.effect-lexi figcaption::before,
-figure.effect-lexi p {
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+figure.effect-lexi:hover img {
+  opacity: 0.2;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-lexi figcaption {
+  padding: 3em;
 }
 
 figure.effect-lexi figcaption::before {
   position: absolute;
-  right: -50px;
-  bottom: -50px;
-  width: 100px;
-  height: 100px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 0 900px rgba(255,255,255,0.2);
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
   content: '';
-  opacity: 0;
-  -webkit-transform: scale3d(0.5,0.5,1);
-  transform: scale3d(0.5,0.5,1);
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-figure.effect-lexi:hover img {
-  opacity: 0.5;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+figure.effect-lexi figcaption::before,
+figure.effect-lexi p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
 
 figure.effect-lexi h2 {
-  text-align: left;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(5px,5px,0);
-  transform: translate3d(5px,5px,0);
+  padding: 20% 0 20px 0;
 }
 
 figure.effect-lexi p {
-  
-  opacity: 0;
-  -webkit-transform: translate3d(20px,20px,0);
-  transform: translate3d(20px,20px,0);
+  margin: 0 auto;
+  max-width: 200px;
+  font-size: 12px;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 figure.effect-lexi p i {
-  font-size: 25px;
+  font-size: 20px;
+  padding-top: 30%; 
 }
-.texto-galeria {
-  font-size: 12px!important;
-  font-weight: 900;
-  text-align: center;
-  color: #000;
-
-}
-
-figure.effect-lexi:hover h2,
+figure.effect-lexi .texto-galeria{
+    display: block;
+  }
+figure.effect-lexi:hover figcaption::before,
 figure.effect-lexi:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+@media screen and (max-width: 550px) {
+  figure.effect-lexi .texto-galeria{
+    display: none;
+  }
+} 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  figure.effect-lexi .texto-galeria{
+    display: none;
+  }
+}
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .grid figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
 }
 /* ===========================
 --- works-machine
@@ -627,11 +628,33 @@ figure.effect-lexi:hover p {
   transition: opacity 0.35s, transform 0.35s;
 }
 
-.machine-box:hover{
+.machine-box:hover, .machine-box:hover{
   opacity: 1;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
+
+.machine-box img {
+  margin: 0 auto;
+}
+
+.tab-pane ul li {
+float: left;
+text-decoration: none;
+list-style: none;
+margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .related-equipment {
+  min-width: 750px;
+}
+}
+
+.related-equipment li {
+  margin-left: 2%!important;
+}
+
 .works-machine-margin h5 {
   margin-bottom: 10px;
 }
@@ -937,7 +960,7 @@ Parallax
 
 @media(min-width:767px) {
 
-    .navbar {
+    /*.navbar {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
@@ -955,7 +978,7 @@ Parallax
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
-	
+	*/
     .intro {
         height: 100%;
         padding: 0;

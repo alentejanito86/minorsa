@@ -38,12 +38,6 @@
 	});
 
 
-//checkbox machines
-$("#cutting_filter").on("click", ":checkbox", function(event){
-  $(":checkbox:not(:checked)", this.form).prop("disabled", function(){
-    return $(this.form).find(":checkbox:checked").length == 1;
-  });
-});
 
 })(jQuery);
 
@@ -77,12 +71,4 @@ end /About Vertical Timeline
 **************************/
 
  
-
-function cuttingChoose(){
-	document.getElementById("orange").selected = "true";
-	document.getElementById("cutting_filter").focus();
-	return document.getElementById("cutting_filter").click();
-	document.getElementById("orange").click();
-	alert("cut");
-}
 
