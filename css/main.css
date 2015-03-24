@@ -208,7 +208,7 @@
 /* line 2, ../sass/layout/_nav.scss */
 .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(234, 59, 59, 0.3);
+  border-bottom: 1px solid rgba(234, 59, 59, 0);
   z-index: 999999;
   background-color: #23bcd4;
 }
@@ -218,8 +218,8 @@
     padding: 20px 0;
     border-bottom: 0;
     letter-spacing: 1px;
-    background: 0 0;
-    background-color: rgba(35, 188, 212, 0.5);
+    /*background: 0 0;
+    background-color: rgba(35,188,212,.5);*/
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -244,13 +244,13 @@
 }*/
 /* line 41, ../sass/layout/_nav.scss */
 .nav-active {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* line 47, ../sass/layout/_nav.scss */
 .navbar-custom.top-nav-collapse {
   @includ MQ(M) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 }
@@ -279,7 +279,7 @@
 }
 /* line 76, ../sass/layout/_nav.scss */
 .navbar-custom ul.nav li a:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0);
 }
 /* line 82, ../sass/layout/_nav.scss */
 .navbar-custom ul.nav ul.dropdown-menu {
@@ -300,7 +300,7 @@
 }
 /* line 96, ../sass/layout/_nav.scss */
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-  background: rgba(35, 188, 212, 0.5);
+  background: rgba(35, 188, 212, 0);
 }
 /* line 104, ../sass/layout/_nav.scss */
 .navbar-custom nav li a {
@@ -311,12 +311,12 @@
 /* line 109, ../sass/layout/_nav.scss */
 .navbar-custom nav li a:hover, .navbar-custom nav li a:focus, .navbar-custom nav li a .active {
   outline: 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0);
 }
 /* line 114, ../sass/layout/_nav.scss */
 .navbar-custom nav li a:hover, .navbar-custom nav li a:focus, .navbar-custom nav li a .active {
   outline: 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* line 122, ../sass/layout/_nav.scss */
@@ -352,68 +352,93 @@ Page machines - background top
 }
 
 /* line 13, ../sass/layout/_page-machine.scss */
+.ct09 {
+  background: url(../machines/img/09/ct09-1.jpg) no-repeat bottom center;
+}
+
+/* line 14, ../sass/layout/_page-machine.scss */
 .mp12 {
   background: url(../machines/img/12/12-1.jpg) no-repeat bottom center;
 }
 
-/* line 14, ../sass/layout/_page-machine.scss */
+/* line 15, ../sass/layout/_page-machine.scss */
 .mp12a {
   background: url(../machines/img/12a/12a-1.jpg) no-repeat bottom center;
 }
 
-/* line 15, ../sass/layout/_page-machine.scss */
+/* line 16, ../sass/layout/_page-machine.scss */
+.tc16 {
+  background: url(../machines/img/16/16-1.jpg) no-repeat bottom center;
+}
+
+/* line 17, ../sass/layout/_page-machine.scss */
+.mp17 {
+  background: url(../machines/img/17/17-1.jpg) no-repeat bottom center;
+}
+
+/* line 18, ../sass/layout/_page-machine.scss */
+.mp17a {
+  background: url(../machines/img/17a/17a-1.jpg) no-repeat bottom center;
+}
+
+/* line 19, ../sass/layout/_page-machine.scss */
+.mp27atr {
+  background: url(../machines/img/27a-tr/27atr-1.jpg) no-repeat bottom center;
+}
+
+/* line 20, ../sass/layout/_page-machine.scss */
 .mp27a {
   background: url(../machines/img/27a/27a-1.jpg) no-repeat bottom center;
 }
 
-/* line 16, ../sass/layout/_page-machine.scss */
+/* line 21, ../sass/layout/_page-machine.scss */
 .mp61b {
   background: url(../machines/img/61b/61b-1.jpg) no-repeat bottom center;
 }
 
-/* line 18, ../sass/layout/_page-machine.scss */
+/* line 23, ../sass/layout/_page-machine.scss */
 #accordion {
   margin-top: 10px;
 }
-/* line 22, ../sass/layout/_page-machine.scss */
+/* line 27, ../sass/layout/_page-machine.scss */
 #accordion .panel-body {
   background-color: #d3d3d3;
 }
-/* line 26, ../sass/layout/_page-machine.scss */
+/* line 31, ../sass/layout/_page-machine.scss */
 #accordion .checkbox {
   padding-left: 0px;
 }
-/* line 29, ../sass/layout/_page-machine.scss */
+/* line 34, ../sass/layout/_page-machine.scss */
 #accordion .checkbox img {
   opacity: .4;
   z-index: 1;
 }
-/* line 33, ../sass/layout/_page-machine.scss */
+/* line 38, ../sass/layout/_page-machine.scss */
 #accordion .checkbox img:hover {
   opacity: .8;
 }
-/* line 37, ../sass/layout/_page-machine.scss */
+/* line 42, ../sass/layout/_page-machine.scss */
 #accordion .checkbox p {
   margin: 0;
   font-size: 11px;
   font-weight: bold;
   margin-top: -17px;
 }
-/* line 44, ../sass/layout/_page-machine.scss */
+/* line 49, ../sass/layout/_page-machine.scss */
 #accordion .checkbox input[type=checkbox]:checked + img {
   opacity: 1;
   border: 2px solid #23bcd4;
 }
-/* line 55, ../sass/layout/_page-machine.scss */
+/* line 60, ../sass/layout/_page-machine.scss */
 #accordion .checkbox:first-child {
   width: 154px;
 }
-/* line 59, ../sass/layout/_page-machine.scss */
+/* line 64, ../sass/layout/_page-machine.scss */
 #accordion .checkbox:first-child h5 {
   line-height: 28px;
   text-align: center;
 }
-/* line 64, ../sass/layout/_page-machine.scss */
+/* line 69, ../sass/layout/_page-machine.scss */
 #accordion input[type=checkbox] {
   visibility: hidden;
 }
