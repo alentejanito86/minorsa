@@ -392,58 +392,53 @@ Page machines - background top
 }
 
 /* line 21, ../sass/layout/_page-machine.scss */
-.mp34c {
-  background: url(../machines/img/34/34c-1.jpg) no-repeat bottom center;
-}
-
-/* line 22, ../sass/layout/_page-machine.scss */
 .mp61b {
   background: url(../machines/img/61b/61b-1.jpg) no-repeat bottom center;
 }
 
-/* line 24, ../sass/layout/_page-machine.scss */
+/* line 23, ../sass/layout/_page-machine.scss */
 #accordion {
   margin-top: 10px;
 }
-/* line 28, ../sass/layout/_page-machine.scss */
+/* line 27, ../sass/layout/_page-machine.scss */
 #accordion .panel-body {
   background-color: #d3d3d3;
 }
-/* line 32, ../sass/layout/_page-machine.scss */
+/* line 31, ../sass/layout/_page-machine.scss */
 #accordion .checkbox {
   padding-left: 0px;
 }
-/* line 35, ../sass/layout/_page-machine.scss */
+/* line 34, ../sass/layout/_page-machine.scss */
 #accordion .checkbox img {
   opacity: .4;
   z-index: 1;
 }
-/* line 39, ../sass/layout/_page-machine.scss */
+/* line 38, ../sass/layout/_page-machine.scss */
 #accordion .checkbox img:hover {
   opacity: .8;
 }
-/* line 43, ../sass/layout/_page-machine.scss */
+/* line 42, ../sass/layout/_page-machine.scss */
 #accordion .checkbox p {
   margin: 0;
   font-size: 11px;
   font-weight: bold;
   margin-top: -17px;
 }
-/* line 50, ../sass/layout/_page-machine.scss */
+/* line 49, ../sass/layout/_page-machine.scss */
 #accordion .checkbox input[type=checkbox]:checked + img {
   opacity: 1;
   border: 2px solid #23bcd4;
 }
-/* line 61, ../sass/layout/_page-machine.scss */
+/* line 60, ../sass/layout/_page-machine.scss */
 #accordion .checkbox:first-child {
   width: 154px;
 }
-/* line 65, ../sass/layout/_page-machine.scss */
+/* line 64, ../sass/layout/_page-machine.scss */
 #accordion .checkbox:first-child h5 {
   line-height: 28px;
   text-align: center;
 }
-/* line 70, ../sass/layout/_page-machine.scss */
+/* line 69, ../sass/layout/_page-machine.scss */
 #accordion input[type=checkbox] {
   visibility: hidden;
 }
